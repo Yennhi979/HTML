@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms Basics</h1>
+    <p>Signup and Contact forms with accessible labels and native validation.</p>
+    <h2>Signup</h2>
+    <p>All fields marked * are required.</p>
+    <form action="#" method="post">
+        <div>
+            <label for="Fullname">Full name *</label>
+            <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                required
+                autocomplete="on">
+        </div>
+
+        <div>
+            <label for="email">Email *</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="on">
+        </div>
+
+        <div>
+            <label for="password">Password *</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+                autocomplete="on">
+            <small> Use at least 8 characters with letters and numbers.</small>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input
+                type="number"
+                name="age"
+                id="age"
+                min="13">
+        </div>
+
+        <div>
+            <label for="url">Website</label>
+            <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="https://example.com"
+                pattern="https://.*">
+        </div>
+
+        <div>
+            <input 
+                type="submit"
+                value="Creat Account">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 10 — Master Challenge: Complex Layout</h1>
+    <p>Create a complex invoice-like table using only: border, colspan, rowspan, align.</p>
+    <table border="1">
+        <caption>INVOICE DETAILS</caption>
+        <thead>
+            <th scope="col" colspan="5">INVOICE</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Customer</td>
+                <td colspan="3">John Doe</td>
+            </tr>
+            <tr>
+                <th scope="col" colspan="2">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>  
+            </tr>
+            <tr>
+                <td colspan="2">Apple</td>
+                <td align="center">2</td>
+                <td align="right">1.00</td>
+                <td align="right">2.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">Banana</td>
+                <td align="center">3</td>
+                <td align="right">0.80</td>
+                <td align="right">2.40</td>               
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" align="right">Grand Total	</td>
+                <td align="right">4.40</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
