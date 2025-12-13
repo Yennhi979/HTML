@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8: Specificity</title>
+    <style>
+        /* The generic tag selector */
+        div {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* The class selector */
+        .box {
+            background-color: orange;
+        }
+
+        /* The ID selector */
+        #special {
+            background-color: purple;
+        }
+
+        /* TODO: Without changing the HTML, write a new CSS rule here 
+                   that turns the background GREEN. 
+                   Hint: You must beat the specificity of the ID (#special).
+                   You might need to chain selectors like: #special.box */
+        #special.box {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="special" class="box">
+        Who controls my background color?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 4: Attributes</title>
+  <style>
+    /* TODO 1: Select the input with type="text" and give it a green border. */
+    input[type="text"] {
+        border-style: solid;
+        border-color: green;
+    }
+
+    /* TODO 2: Select the link that ends with ".pdf" and make it red. 
+                   (Hint: use the $= selector) */
+    a[href$=".pdf"] {
+        color: red;
+    }
+
+    /* TODO 3: Select the link that contains "google" anywhere in the href. 
+                   Make it bold. (Hint: use the *= selector) */
+    a[href*="google"] {
+        font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="password" placeholder="Password">
+  </form>
+
+  <ul>
+    <li><a href="document.pdf">Download PDF</a></li>
+    <li><a href="image.jpg">View Image</a></li>
+    <li><a href="https://www.google.com">Go to Google</a></li>
+  </ul>
+</body>
+
+</html>

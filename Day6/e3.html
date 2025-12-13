@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3: Siblings</title>
+    <style>
+        /* TODO 1: Select the paragraph that comes IMMEDIATELY after the h2. 
+                   Make the text uppercase. */
+            h2 + p {
+                text-transform: uppercase;
+            }
+
+        /* TODO 2: Select ALL paragraphs that follow the h2 (siblings). 
+                   Give them a left margin of 20px. */
+            h2 ~ p {
+                margin-left: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <h2>The Heading</h2>
+    <p>I am the immediate neighbor.</p>
+    <p>I am a neighbor further down.</p>
+    <div>I am not a paragraph, I break the chain.</div>
+    <p>I am still a sibling of h2.</p>
+</body>
+
+</html>

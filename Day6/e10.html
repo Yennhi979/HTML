@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 10: Complex Chain</title>
+    <style>
+        /* TODO: Select the  tag, BUT only when the checkbox 
+                   before it is :checked. 
+                   
+                   Make the label text:
+                   1. Strikethrough (text-decoration: line-through)
+                   2. Color: gray
+                   
+                   Hint: You will need the :checked pseudo-class and the adjacent sibling (+) selector.
+                */
+                input[type="checkbox"]:checked + label {
+                    text-decoration: line-through;
+                    color: gray;
+                } 
+    </style>
+</head>
+
+<body>
+    <div class="task-item">
+        <input type="checkbox" id="task1">
+        <label for="task1">Buy Groceries</label>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6: Pseudo-elements</title>
+    <style>
+        /* TODO 1: Add the text ">> " before every item with class "arrow". 
+                   Make the arrow color blue. */
+                   .arrow::before {
+                    content: ">> ";
+                    color: blue;
+                   }
+
+        /* TODO 2: Add the text " (Read more)" after the link. 
+                   Make this text smaller and gray. */
+                   a::after {
+                    content: "(Read more)";
+                    font-size: 0.85em;
+                    color: gray;
+                   }
+    </style>
+</head>
+
+<body>
+    <p class="arrow">Important point</p>
+    <p>Normal point</p>
+    <p class="arrow">Another important point</p>
+
+    <a href="#" class="read-link">Go to article</a>
+</body>
+
+</html>
