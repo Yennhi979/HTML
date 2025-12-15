@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Exercise 1: Basic Selectors</title>
-    <style>
-        /* TODO 1: Select all paragraphs and make their text color gray. */
-        p {
-            color: gray;
-        }
-        /* TODO 2: Select the element with the class "highlight" and make the background yellow. */
-        .highlight {
-            background-color: yellow;
-        }
-        /* TODO 3: Select the element with the ID "unique-header" and make the font-size 50px. */
-        #unique-header {
-            font-size: 50px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1 id="unique-header">I am unique</h1>
-    <p>I am a standard paragraph.</p>
-    <p class="highlight">I am a highlighted paragraph.</p>
-    <p>I am another standard paragraph.</p>
-</body>
+    <head class="hearder">
+        <h1>Cards & Two-Column Layout</h1>
+        <p>Box model, spacing, and classic layout techniques.</p>
+    </head>
+    <main class="main">
+        <section class="card-component">
+            <h2>Card component</h2>
+            <div class="list-card">
+                <!-- Card 01 -->
+                <article class="card">
+                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card body">
+                        <h3>Card One</h3>
+                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                        <a class="card-button" href="#">Details</a>
+                    </div>
+                </article>
 
+                <!-- Card 02 -->
+                <article class="card">
+                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card body">
+                        <h3>Card One</h3>
+                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                        <a class="card-button" href="#">Details</a>
+                    </div>
+                </article>
+
+                <!-- Card 03 -->
+                <article class="card">
+                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card body">
+                        <h3>Card One</h3>
+                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                        <a class="card-button" href="#">Details</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="two-col">
+            <h2>Two-column (inline-block)</h2>
+            <div class="container">
+                <!----------- col A ---------->
+                <div class="col">
+                    <h3>Column A</h3>
+                    <p>Inline-block avoids float clearing, but introduces whitespace quirks.</p>
+                </div>
+
+                <!----------- col B -------->
+                <div class="col">
+                    <h3>Column B</h3>
+                    <p>Modern CSS prefers Flexbox/Grid, but this illustrates history.</p>
+                </div>
+             </div>   
+        </section>    
+    </main>
+</body>
 </html>

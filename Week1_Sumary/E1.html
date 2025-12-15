@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Structural Webpage Exercise</title>
+</head>
+<body>
+     <!-- ================== HEADER ================== -->
+    <header>
+        <h1>Welcome to the Structural Webpage Exercise</h1>
+        <p>This page uses semantic HTML5 tags without any CSS or JavaScript.</p>
+    </header>
+
+     <!-- ================== NAV ================== -->
+    <nav>
+        <ul>
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#about_us">About Us</a> </li>
+            <li> <a href="#services">Services</a> </li>
+            <li> <a href="#contact">Contact</a> </li>
+        </ul>
+    </nav>
+
+     <!-- ================== MAIN ================== -->
+    <main>
+        <section id="main_content">
+            <h2>Primary Content Area</h2>
+            <p>This section is for the main, unique content of the page, demonstrating the importance of the &lt;main&gt; tag.</p>
+            <p>We are using paragraph tags to structure text content logically. Since there is no CSS, the browser's default styling (line breaks between paragraphs) is applied.</p>
+            <p>All structural elements are present: Header, Nav, Main, Sidebar (Aside), and Footer.</p>
+        </section>
+
+         <!-- ================== ASIDE ================== -->
+        <aside>
+            <h3>Sidebar Content</h3>
+            <p>This is related information, but not essential to the primary topic.</p>
+            <section>
+                <h4>Sign Up Form</h4>
+
+                 <!-- ================== SIGN UP ================== -->
+                <form action="#" method="post">
+
+                     <!-- ================== Input name ================== -->
+                    <div>
+                        <label for="name">Full Name:</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            autocomplete="on">
+                    </div>
+                    <br>
+                    
+                     <!-- ================== Input mail ================== -->
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            autocomplete="on">
+                    </div>
+                    <br>
+
+                    <!-- ================== Input password ================== -->
+                    <div>
+                        <label for="password">Password:</label>
+                        <br>
+                        <input
+                            type="text"
+                            name="password"
+                            id="password"
+                            autocomplete="on">
+                    </div>
+                    <br>
+
+                    <!-- ================== Submit button ================== -->
+                    <input type="submit" value="Register Now">
+                    <br>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <!-- ================== Footer ================== -->
+    <footer>
+        <p>© 2025 Structural Webpage Exercise. All Rights Reserved.</p>
+        <p><a href="#privacy_policy">Privacy Policy</a> | <a href="#terms_of_use">Terms of Use</a></p>
+    </footer>
+</body>
+</html>
