@@ -3,64 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards & Two-Column Layout</title>
+    <style>
+        /*------------ Style Card Component -----------------*/
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b1020;
+            color: #e5e7eb;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
+        }
+        header {
+            inline-size: 100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+
+        }
+        .card-body {
+            padding: 1.25rem;
+        }
+        .card-title {
+            margin-bottom: 0.25rem;
+            margin-top: 0;
+            font-size: 1.17rem;
+        }
+        .card-des {
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+        }
+        .card-button {
+            padding: 0.6rem 1rem;
+            background: #22c55e;
+            color: #06210f;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            align-self: flex-end;
+        }
+        .card-grid {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            width: 100%;
+
+        }
+        .card-media {
+            display: block;
+            inline-size: 100%;
+            object-fit: cover;
+            aspect-ratio: 16 / 9;
+            height: 180px;
+        }
+        /*------------ Style Responsive -----------------*/
+        @media (max-width: 600px) {
+            .card-grid {
+                flex-direction: column;
+            }
+            .card {
+                flex: 100%;
+            }
+            .container-two-col {
+                flex-direction: column;
+            }
+            .col {
+                flex: 100%;
+            }
+        }
+        /*------------ Style Two Col Component -----------------*/
+        .two-col {
+            margin-top: 2rem;
+        }
+        .container-two-col {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            flex-wrap: wrap;
+        }
+        .col {
+            padding: 1.25rem;
+            width: 50%;
+        }
+        .col-title {
+            margin: 0;
+        }
+        .two-col-title-section {
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <head class="hearder">
+    <header>
         <h1>Cards & Two-Column Layout</h1>
         <p>Box model, spacing, and classic layout techniques.</p>
-    </head>
-    <main class="main">
-        <section class="card-component">
+    </header>
+    <main>
+        <section>
             <h2>Card component</h2>
-            <div class="list-card">
+            <div class="card-grid">
                 <!-- Card 01 -->
                 <article class="card">
-                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
-                    <div class="card body">
-                        <h3>Card One</h3>
-                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                    <img class="card-media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card-body">
+                        <h3 class="card-title">Card One</h3>
+                        <p class="card-des">Demonstrates padding, borders, and rounded corners.</p>
                         <a class="card-button" href="#">Details</a>
                     </div>
                 </article>
 
                 <!-- Card 02 -->
                 <article class="card">
-                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
-                    <div class="card body">
-                        <h3>Card One</h3>
-                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                    <img class="card-media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Two</h3>
+                        <p class="card-des">Uses `box-sizing: border-box` to keep widths predictable.</p>
                         <a class="card-button" href="#">Details</a>
                     </div>
                 </article>
 
                 <!-- Card 03 -->
                 <article class="card">
-                    <img class="card media" src="https://picsum.photos/400/220" alt="card one img">
-                    <div class="card body">
-                        <h3>Card One</h3>
-                        <p>Demonstrates padding, borders, and rounded corners.</p>
+                    <img class="card-media" src="https://picsum.photos/400/220" alt="card one img">
+                    <div class="card-body">
+                        <h3 class="card-title">Card Three</h3>
+                        <p class="card-des">Shows margin vs padding and simple shadows.</p>
                         <a class="card-button" href="#">Details</a>
                     </div>
                 </article>
             </div>
         </section>
-        <section class="two-col">
-            <h2>Two-column (inline-block)</h2>
-            <div class="container">
-                <!----------- col A ---------->
+        <section >
+            <h2 class="two-col-title-section">Two-column (inline-block)</h2>
+            <div class="container-two-col">
                 <div class="col">
-                    <h3>Column A</h3>
+                    <h3 class="col-title">Column A</h3>
                     <p>Inline-block avoids float clearing, but introduces whitespace quirks.</p>
                 </div>
-
-                <!----------- col B -------->
                 <div class="col">
-                    <h3>Column B</h3>
+                    <h3 class="col-title">Column B</h3>
                     <p>Modern CSS prefers Flexbox/Grid, but this illustrates history.</p>
                 </div>
              </div>   
-        </section>    
+        </section>  
     </main>
 </body>
 </html>
