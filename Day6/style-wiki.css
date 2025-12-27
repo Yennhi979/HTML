@@ -1,0 +1,227 @@
+:root {
+    font-size: 16px;
+    color: #202122;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Inter', 'Helvetica', 'Arial', sans-serif;
+}
+
+.wkpra-main {
+    width: 1080px;
+    margin: auto;
+}
+
+.wellcome-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0 0.5rem 0.5rem;
+    margin-top: 4px;
+    line-height: 1.65;
+}
+.mp-lower {
+    background: #faf5ff;
+    border: 1px solid #ddcef2;
+    padding: 0 0.5rem 0.5rem;
+    margin-top: 4px;
+    line-height: 1.65;
+}
+
+h1 {
+    padding: 0.1rem;
+    font-size: 162%;
+    margin: 0;
+}
+
+.container-mp-left-right {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.mp-left {
+    background: #f5fffa;
+    flex: 1 1 calc(55% - 5px - 1rem);
+    border: 1px solid #cef2e0;
+    padding: 0 0.5rem 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mp-right {
+    background: #f5faff;
+    flex: 1 1 calc(45% - 5px - 1rem);
+    border: 1px solid #cedff2;
+    padding: 0 0.5rem 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.mp-lower {
+    background: #f5fffa;
+    flex: 1 1 100%;
+    border: 1px solid #cef2e0;
+    padding: 0 0.5rem 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.mp-bottom {
+    border: 1px solid #e2e2e2;
+    padding: 0 0.5rem 0 0.5rem;
+    margin-top: 4px;
+}
+
+.img-1 {
+    aspect-ratio: 140/96;
+    display: block;
+}
+
+.img-2 {
+    aspect-ratio: 140/140;
+    display: block;
+}
+.img-5 {
+    aspect-ratio: 350/422;
+    display: block;  
+}
+
+.img {
+    margin: 0.5rem 0.9rem 0.4rem 0rem;
+}
+
+.img-float-left {
+    float: left;
+}
+
+.img-float-right {
+    float: right;
+}
+
+h2 {
+    border: 1px solid;
+    margin: 0.5rem 0rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.caption {
+    font-size: 94%;
+    max-width: 140px;
+}
+
+.h2-mp-left {
+    background: #cef2e0;
+    border-color: #a3bfb1;
+}
+.h2-mp-right {
+    background: #cedff2;
+    border-color: #a3b0bf;
+}
+.h2-mp-lower {
+    background: #ddcef2;
+    border-color: #afa3bf;
+    width: 100%;
+}
+.h2-mp-bottom, .h2-mp-other {
+    background: #eee;
+    border-color: #ddd;
+    width: 100%; 
+    margin: 0.5rem 0;
+}
+
+.article {
+    margin: 0.5rem 0rem 1rem 0rem;
+}
+
+.address {
+    text-align: right;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+a:link {
+    color: #36c;
+}
+
+a:visited {
+    color: #6a60b0;
+}
+
+a:hover {
+    color: #3056a9;
+}
+
+a:active {
+    color: #233566;
+}
+
+.article-footer {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: right;
+}
+.style-bold {
+    font-weight: bold;
+}
+li > a {
+    font-weight: bold;
+}
+.icon-frame {
+    width: 58px;
+    height: 58px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.des {
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.link-des {
+    font-weight: bold;
+}
+.li {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 50%;
+}
+.ul {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.line-number {
+    display: flex;
+    align-items: center;
+    margin: 0 2.5rem;
+    padding-top: 1.5rem;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    margin: 0.5rem 0;
+    background-color: #c8ccd1;
+    flex: 1;
+}
+.number {
+    padding: 0 1rem;
+
+}
+.wl > ul {
+    padding: 0;
+}
+.container-lang {
+    margin-bottom: 0.1rem;
+}
+.link-gr {
+    text-align: center;
+}
